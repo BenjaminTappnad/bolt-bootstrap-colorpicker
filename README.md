@@ -1,7 +1,7 @@
 Bootstrap colorpicker
 ======================
 
-A replacement for the colorpicker extension https://github.com/SahAssar/bolt-bootstrap-colorpicker to create varchar field instead of longtext, so you define default color value 
+A replacement for the colorpicker extension https://github.com/SahAssar/bolt-bootstrap-colorpicker to create varchar field instead of longtext, so you can define default color value 
 
 Field Usage 
 
