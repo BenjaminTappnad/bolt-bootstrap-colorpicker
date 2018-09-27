@@ -19,7 +19,7 @@ class BootstrapColorPickerPickerField extends FieldTypeBase
 
     public function getStorageType()
     {
-        return 'text';
+        return 'string';
     }
 
     public function getStorageOptions()
