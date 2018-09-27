@@ -1,5 +1,5 @@
 {
-    "name": "sahassar/bootstrapcolorpicker",
+    "name": "BenjaminTappnad/bootstrapcolorpicker",
     "description": "Another colorpicker extension. Based on http://mjolnic.com/bootstrap-colorpicker/ and Raistlfiren/FAIconFieldType",
     "type": "bolt-extension",
     "require": {
@@ -20,11 +20,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "sahassar\\bootstrapcolorpicker\\": "src"
+            "BenjaminTappnad\\bootstrapcolorpicker\\": "src"
         }
     },
     "extra": {
-        "bolt-class": "sahassar\\bootstrapcolorpicker\\BootstrapColorPickerFieldTypeExtension",
+        "bolt-class": "BenjaminTappnad\\bootstrapcolorpicker\\BootstrapColorPickerFieldTypeExtension",
         "bolt-assets": "web",
         "bolt-icon": "web/colorpicker-icon.png"
     }
