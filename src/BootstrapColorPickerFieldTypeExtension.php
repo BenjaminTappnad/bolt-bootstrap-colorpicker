@@ -13,27 +13,33 @@ class BootstrapColorPickerFieldTypeExtension extends SimpleExtension
     protected function registerFields()
     {
         return [
-            new BootstrapColorPickerPickerField()
+            new BootstrapColorPickerPickerField(),
         ];
     }
 
     protected function registerTwigPaths()
     {
         return [
-            'templates'
+            'templates',
         ];
     }
 
     protected function registerAssets()
     {
-        $style = (new Stylesheet('css/bootstrap-colorpicker.min.css'))
+        $style = (new Stylesheet())
+            ->setFileName('css/bootstrap-colorpicker.min.css')
             ->setZone(Zone::BACKEND);
-        $js = (new JavaScript('js/bootstrap-colorpicker.min.js'))
+        $style2 = (new Stylesheet())
+            ->setFileName('bootstrap-colorpicker.min.css')
+            ->setZone(Zone::BACKEND);
+        $js    = (new JavaScript())
+            ->setFileName('js/bootstrap-colorpicker.min.js')
             ->setZone(Zone::BACKEND);
 
         return [
             $style,
-            $js
+            $style2,
+            $js,
         ];
     }
 }
