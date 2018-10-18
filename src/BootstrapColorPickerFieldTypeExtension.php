@@ -1,8 +1,8 @@
 <?php
 
-namespace BenjaminTappnad\bootstrapcolorpicker;
+namespace BenjaminTappnad\Bootstrapcolorpicker;
 
-use BenjaminTappnad\bootstrapcolorpicker\Field\BootstrapColorPickerPickerField;
+use BenjaminTappnad\Bootstrapcolorpicker\Field\BootstrapColorPickerPickerField;
 use Bolt\Extension\SimpleExtension;
 use Bolt\Asset\File\JavaScript;
 use Bolt\Asset\File\Stylesheet;
@@ -29,16 +29,12 @@ class BootstrapColorPickerFieldTypeExtension extends SimpleExtension
         $style = (new Stylesheet())
             ->setFileName('css/bootstrap-colorpicker.min.css')
             ->setZone(Zone::BACKEND);
-        $style2 = (new Stylesheet())
-            ->setFileName('bootstrap-colorpicker.min.css')
-            ->setZone(Zone::BACKEND);
         $js    = (new JavaScript())
             ->setFileName('js/bootstrap-colorpicker.min.js')
             ->setZone(Zone::BACKEND);
 
         return [
             $style,
-            $style2,
             $js,
         ];
     }
