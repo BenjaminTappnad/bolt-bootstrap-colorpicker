@@ -20,7 +20,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "benjamintappnad\\bootstrapcolorpicker\\": "src"
+      "Bolt\\Extension\\BenjaminTappnad\\Bootstrapcolorpicker\\": "src"
     }
   },
   "extra": {

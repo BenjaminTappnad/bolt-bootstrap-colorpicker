@@ -1,6 +1,6 @@
 <?php
 
-namespace BenjaminTappnad\Bootstrapcolorpicker\Field;
+namespace Bolt\Extension\BenjaminTappnad\Bootstrapcolorpicker\Field;
 
 use Bolt\Storage\Field\Type\FieldTypeBase;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace BenjaminTappnad\Bootstrapcolorpicker;
+namespace Bolt\Extension\BenjaminTappnad\Bootstrapcolorpicker;
 
-use BenjaminTappnad\Bootstrapcolorpicker\Field\BootstrapColorPickerPickerField;
+use Bolt\Extension\BenjaminTappnad\Bootstrapcolorpicker\Field\BootstrapColorPickerPickerField;
 use Bolt\Extension\SimpleExtension;
 use Bolt\Asset\File\JavaScript;
 use Bolt\Asset\File\Stylesheet;
