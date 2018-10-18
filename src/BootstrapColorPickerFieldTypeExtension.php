@@ -26,12 +26,10 @@ class BootstrapColorPickerFieldTypeExtension extends SimpleExtension
 
     protected function registerAssets()
     {
-        $style = (new Stylesheet())
-            ->setFileName('css/bootstrap-colorpicker.min.css')
-            ->setZone(Zone::BACKEND);
-        $js    = (new JavaScript())
-            ->setFileName('js/bootstrap-colorpicker.min.js')
-            ->setZone(Zone::BACKEND);
+        $style = Stylesheet::create('css/bootstrap-colorpicker.min.css')
+                           ->setZone(Zone::BACKEND);
+        $js    = JavaScript::create('js/bootstrap-colorpicker.min.js')
+                           ->setZone(Zone::BACKEND);
 
         return [
             $style,
